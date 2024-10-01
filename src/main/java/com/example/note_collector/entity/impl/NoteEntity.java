@@ -1,5 +1,6 @@
 package com.example.note_collector.entity.impl;
 
+import com.example.note_collector.entity.SuperEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "note")
-public class NoteEntity {
+public class NoteEntity implements SuperEntity {
     @Id
     private String noteId;
     private String noteTitle;

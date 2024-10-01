@@ -1,4 +1,6 @@
 package com.example.note_collector.dto;
 
-public interface SuperDto {
+import java.io.Serializable;
+
+public interface SuperDto extends Serializable {
 }

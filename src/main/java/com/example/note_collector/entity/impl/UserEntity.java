@@ -1,5 +1,6 @@
 package com.example.note_collector.entity.impl;
 
+import com.example.note_collector.entity.SuperEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +13,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "users")
-public class UserEntity {
+public class UserEntity implements SuperEntity {
     @Id
     private String userId;
     private String firstName;
