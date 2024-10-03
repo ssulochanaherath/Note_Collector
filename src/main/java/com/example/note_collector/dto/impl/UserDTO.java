@@ -10,12 +10,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class UserDto implements SuperDto {
+public class UserDTO implements SuperDto {
     private String userId;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
     private String profilePic;
-    private List<NoteDto> notes;
+    private List<NoteDTO> notes;
 }
